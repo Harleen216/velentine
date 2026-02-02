@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>You Said Yes 💖</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      background-image:url(https://i.pinimg.com/736x/e9/4a/21/e94a219f55b95a0b6671d16a4d8c1d2f.jpg);
+      justify-content: center;
+      background-repeat: no-repeat;
+      align-items: flex-start;
+      padding-top: 40px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      width: 85%;
+      max-width: 900px;
+    }
+
+    .card {
+      perspective: 1000px;
+      background:rgba(255, 255, 255, 0.1);
+
+    }
+
+    .card-inner {
+      width: 100%;
+      height: 500px;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.8s;
+    }
+
+    .card.flip .card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .card-front,
+    .card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+      backface-visibility: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 25px;
+      color: #fff;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+      backdrop-filter: blur(10px);
+      background: rgba(255,255,255,0.2);
+    }
+
+    .card-front h2 {
+      margin-bottom: 20px;
+    }
+
+    .card-front button {
+      padding: 12px 28px;
+      border: none;
+      border-radius: 30px;
+      background: #ff4b5c;
+      color: #fff;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .card-front button:hover {
+      background: #ff1e38;
+    }
+
+    .card-back {
+      transform: rotateY(180deg);
+      font-size: 1.1rem;
+      text-align: center;
+      line-height: 1.6;
+    }
+    .love-footer {
+      position: fixed;
+      bottom: 20px;
+      width: 100%;
+      text-align: center;
+      font-size: 3rem;
+      color: #fff;
+      opacity: 0.9;
+    }
+    .next-page-btn {
+      margin-top: 20px;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 25px;
+      background: #ff4b5c;
+      color: #fff;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+      text-align: center;
+    }
+    .next-page-btn:hover {
+      background: #ff1e38;
+      transform: scale(1.05);
+    }
+    .button-wrapper {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-top: 100px;
+      margin-right: 1000px;
+
+    }
+
+    
+
+
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="card" onclick="flipCard(this)">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="https://i.pinimg.com/1200x/2b/a8/cd/2ba8cd2bba6ff06b6a1248669187d04a.jpg" width=200px>
+          <h2> 1 💌</h2>
+          <button>Click Me</button>
+        </div>
+        <div class="card-back">
+          I want you to know that you are the best thing that ever happened to me . You listen to my non stop rants without getting bored. You are always there when i need you. I love it when you make me feel special. I love when you care about me and treat me like your own kudi. Sometimes i do things just to irritate you and hear daant from you. Schi saugh lge tuc best cheez ho jo aaj tk hoyi aa mere naal.
+        </div>
+      </div>
+    </div>
+
+    <div class="card" onclick="flipCard(this)">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="https://i.pinimg.com/736x/e8/e9/dc/e8e9dcc59ce5f9a60652e9a84bbbaa69.jpg" width=200px>
+          <h2> 2 🌹</h2>
+          <button>Click Me</button>
+        </div>
+        <div class="card-back">
+          Mainu pata mai tanu tang krdi aa tade naal larhdi aa prr schii tanu khon toh ostoh kite vdd drdi v aa. mainu hrr morh te tuc chyide ho. taade toh pehle mai socheya v ni si koe ina kru mera koe eve sath dauga. tade naa bitaya hrr moment special aa hrr paal special aa. Mainu ni pata eh 4.5 saal kive lang gye hasde, khed de, larhde Every moment with you feels magical. i want you by my side for the rest of my life.
+        </div>
+      </div>
+    </div>
+
+    <div class="card" onclick="flipCard(this)">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="https://i.pinimg.com/1200x/af/13/cf/af13cfc64c2b9d88c184c4bbf7672038.jpg" width= 200px>
+          <h2> 3 💖</h2>
+          <button>Click Me</button>
+        </div>
+        <div class="card-back">
+          I want to be with you forever, till forever ends.You are my safeplace, you are my husband, you are my bestfriend, you are the love of my life, you are the one who understands me more then anyone else. I promise i will be by your side everytime for the rest of our lives. I seriously don't want to live another moment without you.
+        </div>
+      </div>
+      <div class="button-wrapper">
+  <button class="next-page-btn" onclick="window.location.href='h3.html'">VIEW YOUR GIFTS</button></div>
+</div>
+</div>
+<script>
+    function flipCard(card) {
+      card.classList.toggle("flip");
+    }
+  </script>
+
+
+  <footer class="love-footer">
+  I love you Preet soo muchhh muaahhhhhhh💋
+</footer>
+
+
+</body>
+</html>

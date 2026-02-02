@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Valentine’s Day ❤️</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; }
+    body {
+      background-image: url(https://i.pinimg.com/736x/e9/4a/21/e94a219f55b95a0b6671d16a4d8c1d2f.jpg);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-repeat: no-repeat;
+      align-items: flex-start;
+      padding-top: 40px;
+      background-size: cover;
+      background-position: center;
+    }
+    .card {
+      background:rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 40px;
+      max-width: 600px;
+      text-align: center;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+      backdrop-filter: blur(10px);
+    }
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+    .top-image {
+      width: 120px;
+      height: auto;
+      margin-bottom: 20px;
+      animation: pulse 1.5s infinite;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+    button {
+      background: #ff4b5c;
+      border: none;
+      padding: 15px 30px;
+      border-radius: 30px;
+      font-size: 1rem;
+      color: #fff;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover { background: #ff1e38; }
+    footer {
+      margin-top: 25px;
+      font-size: 0.9rem;
+      opacity: 0.85;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="https://i.pinimg.com/736x/29/fc/44/29fc44ade8a40b8a8b1575aa4d8ae6ad.jpg" width="200px" class="top-image">
+    <h1>Happy Valentine’s Day</h1>
+    <p>
+      I made this little surprise for you with lots and lots of love. 
+      <br>
+      Thank you for filling my life with smiles, warmth, and happiness. <br>
+      Will you be my valentine?
+    </p>
+    <div style="display:flex; gap:20px; justify-content:center; margin-bottom:20px;">
+      <button onclick="window.location.href='h2.html'">Yes 💖</button>
+      <button onclick="noClicked()">No 💔</button>
+    </div>
+    <footer id="message"></footer>
+  </div>
+
+  <script>
+    function yesClicked() {
+      document.getElementById('message').innerText = "Yay! You just made my Valentine’s Day extra special 💕";
+    }
+
+    function noClicked() {
+      document.getElementById('message').innerText = "HAWWWW 🥺 TRY AGAIN!!!😠";
+    }
+  </script>
+</body>
+</html>
